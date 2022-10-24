@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/javascript.js"></script>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <!-- <script src="js/javascript.js"></script> -->
     <title>Document</title>
 </head>
+
 <body>
     <h2>Q1- Create a webpage that hide a text on the click of a button.</h2>
     <p id="hide">This text will be hidden when we click on the button below</p>
@@ -18,6 +20,32 @@
     <button onclick="document.getElementById('bulbimage').src='images/on_bulb.jpg'">Turn on the bulb</button>
     <button onclick="document.getElementById('bulbimage').src='images/off_bulb.png'">Turn off the bulb</button>
 
+    <h2>Q3- Create a webpage that changes the text of a paragraph on the click of a button.</h2>
+    <p id="change">This conntent will be changed once the click button is clicked</p>
+    <button onclick="document.getElementById('change').innerHTML='Told you magic will happen'">Click to see the
+        magic</button>
+
+    <h2>Q4- Create a webpage that alerts a warning “Error” when a button is clicked.</h2>
+    <button onclick="alert('Error 404')">click to see pop up</button>
+
+    <h2>Q5- Create a webpage that toggles a text (show and hide) on the click of a button.</h2>
+    <p id="toggle">I am going to be swaped</p>
+
+    <button onclick="toggle()">click to toggle</button>
+
+    <script>
+        function toggle() {
+            let x = document.getElementById('toggle');
+            if (x.style.display === 'none') {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+
+        }
+    </script>
+
 
 </body>
+
 </html>
