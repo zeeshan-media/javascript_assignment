@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
-    <!-- <script src="js/javascript.js"></script> -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/javascript.js"></script>
     <title>Document</title>
 </head>
 
@@ -33,17 +33,11 @@
 
     <button onclick="toggle()">click to toggle</button>
 
-    <script>
-        function toggle() {
-            let x = document.getElementById('toggle');
-            if (x.style.display === 'none') {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
-
-        }
-    </script>
+    <div class="counter">
+        counter
+    </div>
+    a: <input type="number" id="a">
+    <button onclick="add()">add</button>
 
 
 </body>
